@@ -1,0 +1,96 @@
+/* Default styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  background-image: radial-gradient(yellow, pink);
+  color: chocolate;
+  user-select: none;
+}
+
+input {
+  color: #0c0601;
+  background-color: #DCE1EB;
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  margin: 10px 0;
+}
+
+button {
+  color: #FDFDFD;
+  background-color: darkred;
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+img {
+  width: 100%; /* Adjust image width to fit the container */
+  max-width: 350px; /* Limit maximum width */
+  display: block; /* Ensure proper alignment */
+  margin: 0 auto;
+  border-radius: 5%;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%; /* Adjust maximum width */
+  margin: 30px auto;
+  padding: 0 10px; /* Add some padding */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul li {
+  font-size: 20px;
+  background-color: #FFFDFB;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: darkorange;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background-color:goldenrod;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 50%; /* Adjust maximum width for larger screens */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 40%; /* Further adjust maximum width for larger screens */
+  }
+}
